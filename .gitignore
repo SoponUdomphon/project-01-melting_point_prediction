@@ -205,3 +205,62 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Data files
+# ----------------
+# แนะนำให้สร้างโฟลเดอร์สำหรับเก็บข้อมูล เช่น data/ แล้ว ignore ทั้งโฟลเดอร์
+/data/
+/datasets/
+/raw_data/
+
+# หรือ ignore ตามนามสกุลไฟล์ข้อมูลขนาดใหญ่ที่พบบ่อย
+*.csv
+*.parquet
+*.h5
+*.hdf5
+*.db
+*.sqlite3
+*.xls
+*.xlsx
+*.jsonl
+
+# Trained models
+# ----------------
+# แนะนำให้สร้างโฟลเดอร์สำหรับเก็บโมเดล เช่น models/
+/models/
+/saved_models/
+/checkpoints/
+
+# หรือ ignore ตามนามสกุลไฟล์โมเดลที่พบบ่อย
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.h5
+*.keras
+
+# Outputs, plots, and logs
+# ----------------
+/outputs/
+/plots/
+/figures/
+/reports/
+
+# ไฟล์ Logs ที่อาจจะสร้างขึ้นเอง
+*.log
+
+# Secrets and configuration files
+# ----------------
+secrets.yaml
+secrets.yml
+config.ini
+credentials.json
+google_credentials.json
+
+# Library-specific caches
+# ----------------
+mlruns/          # MLflow tracking
+wandb/           # Weights & Biases local cache
+scikit_learn_data/ # scikit-learn dataset cache
+.hf_cache/       # Hugging Face cache
